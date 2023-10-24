@@ -1,3 +1,19 @@
-p {
+
+<!-- box-sizing hentet fra ww3 om layout -->
+* { 
+    box-sizing: border-box;
+  }p {
     font-family: arial;
+    color: #772e25;
+    font-size: 1rem;
     }
+body {
+    background-color: #edddd4;
+}
+header{
+    background-color: #197278;
+    padding: 30px;
+    text-align: center;
+    color:#edddd4
+}
+<!-- temafarger: #197278;, #edddd4, #c44536, #772e25, hentet fra https://venngage.com/blog/fall-color-palettes/ -->
