@@ -1,20 +1,68 @@
-
-
-  p {
-    font-family: arial;
-    color: #ffffff;
-    font-size: 1rem;
-    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-color: #ffffff
+  background-color: #ffffff
+}
+p {
+  font-family: arial;
+  color: #ffffff;
+  font-size: 1rem;
+ }
+.img.logo {
+  width: 150px;
+  height: 100px;
+  border: 1px;
+  margin: 0%;
+  }
+h1{
+  font-family: arial;
+  size: 28pt;
+  color: #000000;
+}
+h2{
+  font-family: arial;
+  size: 20pt;
+  color: #000000;
+}
+.indexoverskrift{
+  font-family: arial;
+  font-size: 38pt;
+  color: #000000;
+  font-weight: bold;
+  padding-left: 10%;
+  padding-top: 10%;
+  
+}
+.indexoverskrift2{
+  font-family: arial;
+  font-size: 28pt;
+  font-weight: bold;
+  font-style: bold;
+  color: #000000;
+  padding-left: 10%;
+}
+.indexoverskrift3{
+  font-family: arial;
+  font-size: 28pt;
+  font-weight: bold;
+  font-style: bold; 
+  color: #edddd4;
+  padding: 10% 10% 10% 10%;
+}
+.forsidebilde{
+  width: 100%;
+  height: 100%;
 }
 .grid-container {
     
     min-width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr  3fr 0.75fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px  200px 700px 150pxfr;
     border: none;
     gap: 0px;
     justify-content: center;
@@ -22,32 +70,39 @@ body {
 
   }
   .boks1 {
-    background-color: #197278;
+    background-color: #edddd4;
     padding: 20px;
     grid-row: 1 / 2;
     grid-column: 1 / 3;
   
   }
   .boks2 {
-    background-color: #c44536;
+    background-color: #772e25;
     padding: 20px;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
   .boks3 {
     background-color: #772e25;
-    padding: 20px;
-    padding: 20px;
+    padding: 0px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-
   }
   .boks4 {
     padding: 20px;
-    background-color: #edddd4;
+    background-color: #dea640;
     grid-row: 3 / 4;
     grid-column: 1 / 3;
+    max-height: 600px;
+    padding: 0px;
  
   }
+  .footer{
+    padding: 20px;
+    background-color: #000000;
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+  }
 
-/* temafarger: #197278;, #edddd4, #c44536, #772e25, hentet fra https://venngage.com/blog/fall-color-palettes/ */
+/* temafarger: #197278;, #edddd4, #c44536, #772e25, hentet fra https://venngage.com/blog/fall-color-palettes/ <div class="indexoverskrift3">Læringsrike praksisperioder i arbeidslivet – og en sosial studietid.
+                Ved OsloMet får du kunnskap og erfaringer for livet!</div>*/
