@@ -36,7 +36,7 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
 }
 
 .grid-1{
-  background-color: #3a9ba2;
+  background-color: #3da6ad;
   grid-area: grid-1;
   padding: 40px;
   grid-column: 1 / 2;
@@ -109,14 +109,14 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 }
 p {
   white-space: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: arial;
   color: #0b3437;
 }
 h1{
   font-family: arial;
   font-size: 2rem;
-  color: #bf840d;
+  color: #efede9;
   text-transform: uppercase;
 }
 h2{
@@ -140,7 +140,7 @@ h2{
 .forsidetekst-stor{
   font-family: arial;
   font-size: 4rem;
-  color: #bf840d;
+  color: #f3e6ce;
   text-transform: uppercase;
 }
 .menylink{
