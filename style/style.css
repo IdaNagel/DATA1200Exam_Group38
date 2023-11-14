@@ -1,4 +1,3 @@
-/*  og html, body: Legger til padding og margin på 0 for at nettsiden skal fylle hele bildet i nettleseren */
 *{
   padding: 0%;
   margin: 0%;
@@ -112,6 +111,8 @@ p {
   font-size: 1.2rem;
   font-family: arial;
   color: #0b3437;
+  white-space:?????????
+
 }
 h1{
   font-family: arial;
