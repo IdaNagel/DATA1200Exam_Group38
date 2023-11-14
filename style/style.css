@@ -1,4 +1,4 @@
-/*  og html, body: Legger til padding og margin på 0 for at nettsiden skal fylle hele bildet i nettleseren */
+/*  og html, body: Legger til padding og margin på 0 for at nettsiden skal fylle hele bildet i nettleseren. Etter hjelp fra TA */
 *{
   padding: 0%;
   margin: 0%;
@@ -127,7 +127,7 @@ h2{
 }
 .bildetekst{
   font-size: 1rem;
-  color: #444444;
+  color: #000000;
   font-style: italic;
   font-family: arial;
 }
