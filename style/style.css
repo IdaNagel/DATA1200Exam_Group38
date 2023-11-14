@@ -36,7 +36,7 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
 }
 
 .grid-1{
-  background-color: #298b92;
+  background-color: #3a9ba2;
   grid-area: grid-1;
   padding: 40px;
   grid-column: 1 / 2;
