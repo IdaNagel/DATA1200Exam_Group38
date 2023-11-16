@@ -76,7 +76,7 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
   display: grid;
   height: 100%;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr 2fr 2fr 10%;
+  grid-template-rows: 1fr 2fr 2fr auto;
 }
 /*grid-item øverst på siden m/logo og lenker */
 .logobar{
@@ -168,13 +168,18 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
   background-color: #232323;
   grid-column: 1 / 3;
   grid-row: 4 / 5;
-  padding-top: 5px;
   padding: 30px;
+ 
 }
 .footer-text{
   font-family: arial;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #bababa;
+  text-align:center;
+}
+.dekorativ-dot{
+  color: #3da6ad;
+  font-size: 1.5rem;
 }
 /* Styling av logoen øverst på siden */
 .logo{
