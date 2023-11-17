@@ -1,3 +1,4 @@
+/* Sørger for at det ikke blir en hvit kant i nettlesereren*/
 *{
   padding: 0%;
   margin: 0%;
@@ -7,7 +8,8 @@ html, body {
   margin: 0;
 }
 p{
-  /* margin over og under er lagt til her og i h1+h2 fordi disse elementene ikke automatisk får linjeskift. Finner ikke ut hvorfor dette ikke skjer*/
+  /* margin over og under er lagt til her og i h1+h2 fordi disse elementene ikke automatisk får linjeskift. 
+  Finner ikke ut hvorfor dette ikke skjer*/
   font-size: 1.2rem;
   font-family: arial;
   color: #0b3437;
@@ -132,8 +134,8 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
   color:#3da6ad;
   text-decoration: underline;
 }
-/* grid-item som fylles helt av et bilde */
-.grid-2-bilde{
+/* grid-item på forsiden som fylles helt av et bilde */
+.grid-2-bilde-forside{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   background-image: url("/media/26.jpg"); /* Foto: Signe Solberg Jørgensen */ 
@@ -141,11 +143,11 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
   max-width: 100%;
   height: auto;
 }
-/* grid-item som fylles helt av et bilde */
-.grid-2-bilde-4{
+/* grid-item i "bildegalleriet" som fylles helt av et bilde */
+.grid-2-bilde-bildegalleri{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background-image: url("/media/rosatre2.jpg"); /* Foto: Signe Solberg Jørgensen */ 
+  background-image: url("/media/rosatre2.jpg"); /* Foto: Signe Solberg Jørgensen */
   background-size:cover;
   max-width: 100%;
   height: auto;
@@ -177,11 +179,12 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
   color: #bababa;
   text-align:center;
 }
+/* klasse for å få en dekorativ tekst ulik <p> som kan brukes der man ønsker*/
 .dekorativ-dot{
   color: #3da6ad;
   font-size: 1.5rem;
 }
-/* Styling av logoen øverst på siden */
+/* Styling av bilde av logoen øverst på siden */
 .logo{
   width: 140px;
   height: auto;
