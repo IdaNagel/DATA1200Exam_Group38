@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  padding: 0%; /* Sjekk om denne funker! */ 
 }
 
 p {
@@ -317,7 +318,7 @@ etter hverandre*/
   .grid-2-bilde-bildegalleri {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-image: url(../media/rosatre2.jpg);
+    background-image: url(../media/inngang.jpg);
     /* Foto: Signe Solberg Jørgensen */
     background-size: cover;
     max-width: 100%;
@@ -347,4 +348,173 @@ etter hverandre*/
     padding: 30px;
 
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 */
+
+
+
+
+
+
+
+
+
+
+/*CSS FOR SIDE 4 */
+/* Styling av grids-container, side 4. Hjelp til grids hentet fra w3schools.com */
+.side4-container {
+  display: grid;
+  grid-template-areas:
+    'header menu menu menu menu menu menu menu menu'
+    'main main main main main2 main2 main2 main2 main2'
+    'footer footer footer footer footer footer footer footer footer';
+    height: 100%;
+    width: 100%;
+    background-color: #f0b372;
+}
+
+
+
+/* Side4: Styling av header med logo */
+.side4-grid-header { 
+  grid-area: header;
+  border: 0px solid #636363; 
+  background-color: none;
+  padding: 20px;
+  font-size: 30px;
+
+
+  
+  
+}
+
+/* Side 4: Styling av bilde inne i grid1. Kode hentet fra https://www.w3schools.com/howto/howto_css_image_center.asp */
+.side4-grid-header img{
+  height: 150px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+/* Styling av logo når pilpekeren trykker på bildet, hentet fra https://www.w3schools.com/css/css_image_transparency.asp */
+.side4-grid-header img:hover{
+  opacity: 0.5;
+}
+
+
+
+
+
+
+/*Side 4: Styling av menybar*/
+.side4-grid-menybar { 
+  grid-area: menu; 
+  background-color: none;
+  text-align: right;
+  padding: 40px; 
+  border: 0px solid #636363; 
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+
+/* Side4:Styling av lenker i grid2 (menybar) */
+.side4-grid-menybar a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: #000000;
+  background-color: #ffd399;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+
+.side4-grid-menybar a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  padding-right: 50px;
+  color: #000000;
+  background-color:#efded8;
+  text-transform: uppercase;
+  padding: 20px;
+  text-decoration: none;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+
+/*Side 4: Styling av hovedinnhold*/
+.side4-grid-innholdvenstre { 
+  grid-area: main;
+  background-color: none;
+  padding: 30px;
+  padding-right: 70px;
+  padding-left: 70px;
+  font-size: 30px;
+  border: 0px solid #636363; 
+  font-size: 1.5rem;
+}
+
+
+/*Side4: Styling av hovedinnhold høyre side*/
+.side4-grid-innholdhøyre {
+  grid-area: main2;
+  background-color: none;
+  padding: 30px;
+  padding-right: 70px;
+  padding-left: 50px;
+  font-size: 30px;
+  border: 0px solid #636363; 
+  font-size: 1.5rem;
+
+}
+
+
+
+/*Side4: Styling av footer-grid*/
+.side4-grid-footer { 
+  grid-area: footer;
+  background-color: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border: 0px solid #636363; 
+  
+}
+
+/* Side 4: Styling av tekst i footer */
+.side4-grid-footer p{
+  font-size: 1rem;
+  color: #342f1e;
+  text-transform: uppercase;
+  
 }
