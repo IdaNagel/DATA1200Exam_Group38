@@ -1,13 +1,12 @@
-*{
-  padding: 0%;
-  margin: 0%;
-}
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
-p{
-  /* margin over og under er lagt til her og i h1+h2 fordi disse elementene ikke automatisk får linjeskift. Finner ikke ut hvorfor dette ikke skjer*/
+
+p {
+  /* margin over og under er lagt til her og i h1+h2 fordi disse elementene ikke automatisk får linjeskift. 
+  Finner ikke ut hvorfor dette ikke skjer*/
   font-size: 1.2rem;
   font-family: arial;
   color: #0b3437;
@@ -15,37 +14,42 @@ p{
   white-space: normal;
   margin-top: 15px;
   margin-bottom: 15px;
-  
+
 }
-h1{
+
+h1 {
   font-family: arial;
   font-size: 2rem;
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 15px;
- 
+
 }
-h2{
+
+h2 {
   font-size: 1.5rem;
   font-family: arial;
   color: #0b3437;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.bildetekst{
+
+.bildetekst {
   font-size: 1rem;
   color: #000000;
   font-style: italic;
   font-family: arial;
   margin-bottom: 30px;
 }
-.forsidetekst-liten{
+
+.forsidetekst-liten {
   font-size: 3rem;
   font-family: arial;
   color: #0b3437;
   text-transform: uppercase;
 }
-.forsidetekst-stor{
+
+.forsidetekst-stor {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 4rem;
   color: #f3e6ce;
@@ -53,158 +57,294 @@ h2{
   font-weight: bold;
   margin-top: 20px;
 }
-.menylink{
+
+.menylink {
   font-size: 2rem;
   padding-left: 50%;
   font-family: arial;
   text-transform: uppercase;
 
 }
+
 a {
   color: #5e4112;
   text-decoration: none;
 }
-a:hover{
-  color:#3da6ad;
+
+a:hover {
+  color: #3da6ad;
   text-decoration: underline;
 }
-/* Kode til plassering av grid-items (grid-template-areas) fra "ProgBytes"-youtube-canal
-(lenke: https://www.youtube.com/watch?v=pw3tyBS6KMw)
-Resten av kode for grid-container og items via W3, https://www.w3schools.com/css/css_grid.asp*/
- .container{
-  width: 100%;
-  display: grid;
-  height: 100%;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr 2fr 2fr auto;
-}
-/*grid-item øverst på siden m/logo og lenker */
-.logobar{
-  background-color: #edddd4;
-  grid-area: navbar;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  padding: 30px;
-  
-}
-.menybar{
-  background-color: #edddd4;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  padding: 10px;
-}
+
 .menybar a {
   color: #000000;
   text-decoration: none;
 }
-.menybar a:hover{
-  color:#db982c;
+
+.menybar a:hover {
+  color: #db982c;
   text-decoration: underline;
 }
 
-.grid-1{
-  background-color: #3da6ad;
-  grid-area: grid-1;
-  padding: 40px;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
 .grid-1 a {
   color: #5e4112;
   text-decoration: none;
 }
-.grid-1 a:hover{
-  color:#db982c;
+
+.grid-1 a:hover {
+  color: #db982c;
   text-decoration: underline;
 }
-.grid-2{
-  background-color:#cba65c;
-  grid-area: grid-2;
-  padding: 40px;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-} 
+
 .grid-2 a {
   color: #5e4112;
   text-decoration: none;
 }
-.grid-2 a:hover{
-  color:#3da6ad;
+
+.grid-2 a:hover {
+  color: #3da6ad;
   text-decoration: underline;
 }
-/* grid-item som fylles helt av et bilde */
-.grid-2-bilde{
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-image: url("/media/26.jpg"); /* Foto: Signe Solberg Jørgensen */ 
-  background-size:cover;
-  max-width: 100%;
-  height: auto;
-}
-/* grid-item som fylles helt av et bilde */
-.grid-2-bilde-4{
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-image: url("/media/rosatre2.jpg"); /* Foto: Signe Solberg Jørgensen */ 
-  background-size:cover;
-  max-width: 100%;
-  height: auto;
-}
-.grid-3{
-  background-color: #db982c;
-  grid-area: grid-3;
-  padding: 40px;
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-.grid-4{
-  background-color: #f0bb66;
-  grid-area: grid-4;
-  padding: 40px;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-}
-.grid-footer{
-  background-color: #232323;
-  grid-column: 1 / 3;
-  grid-row: 4 / 5;
-  padding: 30px;
- 
-}
-.footer-text{
+
+.footer-text {
   font-family: arial;
   font-size: 1.5rem;
   color: #bababa;
-  text-align:center;
+  text-align: center;
 }
-.dekorativ-dot{
+
+/* klasse for å få en dekorativ tekst ulik <p> som kan brukes der man ønsker*/
+.dekorativ-dot {
   color: #3da6ad;
   font-size: 1.5rem;
 }
-/* Styling av logoen øverst på siden */
-.logo{
+
+/* Styling av bilde av logoen øverst på siden */
+.logo {
   width: 140px;
   height: auto;
 }
+
 /*Styling av bilde. Object-fit for at bildet skal dekke hele grid-item, */
 /* Funnet hjelp til kode på https://www.w3schools.com/css/css_rwd_images.asp 
 og https://www.w3schools.com/css/css3_object-fit.asp*/
-.bilde{
-      object-fit: cover;
-      max-height: 700px;
-      width: auto;
+.bilde {
+  object-fit: cover;
+  max-height: 700px;
+  width: auto;
 }
+
 /* max-bredde og høyde tilpasset slik at bildet skal endre str ved skalering av nettleser. Hentet fra 
 https://www.w3schools.com/css/css_rwd_images.asp */
-.bilde-i-tekst{
-      max-width: 100%;
-      height: auto;
+.bilde-i-tekst {
+  max-width: 100%;
+  height: auto;
 
 }
+
 /* klasse for bilder som skal være delvis gjennomsiktige, til dekorasjon */
-.bilde-pynt{
-      max-height: 400px;
-      width: auto;
-      opacity: 0.5;
-      object-fit: fill;
+.bilde-pynt {
+  max-height: 400px;
+  width: auto;
+  opacity: 0.5;
+  object-fit: fill;
+}
+
+
+/* Har lagt inn alt av media-query sammen på bunnen av css hva gjelder skalering for å gjøre det mer oversiktlig og fint */
+
+
+@media only screen and (min-width: 750px) {
+
+  /* bruker body for å kapsulere alt inn under @media, slik som vist på w3school. Forsøkt uten body, men da skalerer ikke 
+  nettsiden riktig*/
+
+  body {
+
+    /* Kode til plassering av grid-items (grid-template-areas) fra "ProgBytes"-youtube-canal
+(lenke: https://www.youtube.com/watch?v=pw3tyBS6KMw)
+Resten av kode for grid-container og items via W3, https://www.w3schools.com/css/css_grid.asp*/
+    .container {
+      width: 100%;
+      display: grid;
+      height: 100%;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 1fr 2fr 2fr auto;
+    }
+
+    /*grid-item øverst på siden m/logo og lenker */
+    .logobar {
+      background-color: #edddd4;
+      grid-area: navbar;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding: 30px;
+
+    }
+
+    .menybar {
+      background-color: #edddd4;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      padding: 10px;
+    }
+
+    .grid-1 {
+      background-color: #3da6ad;
+      grid-area: grid-1;
+      padding: 40px;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .grid-2 {
+      background-color: #cba65c;
+      grid-area: grid-2;
+      padding: 40px;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    /* grid-item på forsiden som fylles helt av et bilde */
+    .grid-2-bilde-forside {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      background-image: url(../media/26.jpg);
+      /* Foto: Signe Solberg Jørgensen */
+      background-size: cover;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* grid-item i "bildegalleriet" som fylles helt av et bilde */
+    .grid-2-bilde-bildegalleri {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      background-image: url(../media/rosatre2.jpg);
+      /* Foto: Signe Solberg Jørgensen */
+      background-size: cover;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .grid-3 {
+      background-color: #db982c;
+      grid-area: grid-3;
+      padding: 40px;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .grid-4 {
+      background-color: #f0bb66;
+      grid-area: grid-4;
+      padding: 40px;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
+    .grid-footer {
+      background-color: #232323;
+      grid-column: 1 / 3;
+      grid-row: 4 / 5;
+      padding: 30px;
+
+    }
+  }
+
+}
+
+/* egen media-query når skjermen blir liten, fortsetter med grid-system for å beholde farger og font, men legger "boksene" 
+etter hverandre*/
+
+@media only screen and (max-width: 749px) {
+  body {
+    .container {
+      width: 100%;
+      display: grid;
+      height: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 2fr 2fr auto;
+    }
+
+    /*grid-item øverst på siden m/logo og lenker */
+    .logobar {
+      background-color: #edddd4;
+      grid-area: navbar;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding: 30px;
+    }
+
+    .menybar {
+      background-color: #edddd4;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      padding: 10px;
+    }
+
+    .grid-1 {
+      background-color: #3da6ad;
+      grid-area: grid-1;
+      padding: 40px;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+  }
+
+  .grid-2 {
+    background-color: #cba65c;
+    grid-area: grid-2;
+    padding: 40px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+
+  /* grid-item på forsiden som fylles helt av et bilde */
+  .grid-2-bilde-forside {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-image: url(../media/26.jpg);
+    /* Foto: Signe Solberg Jørgensen */
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* grid-item i "bildegalleriet" som fylles helt av et bilde */
+  .grid-2-bilde-bildegalleri {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-image: url(../media/rosatre2.jpg);
+    /* Foto: Signe Solberg Jørgensen */
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grid-3 {
+    background-color: #db982c;
+    grid-area: grid-3;
+    padding: 40px;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .grid-4 {
+    background-color: #f0bb66;
+    grid-area: grid-4;
+    padding: 40px;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .grid-footer {
+    background-color: #232323;
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    padding: 30px;
+
+  }
 }
