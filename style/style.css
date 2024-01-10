@@ -138,7 +138,7 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
 .grid-2-bilde-forside{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background-image: url("/media/26.jpg"); /* Foto: Signe Solberg Jørgensen */ 
+  background-image: url(../media/26.jpg); /* Foto: Signe Solberg Jørgensen */ 
   background-size:cover;
   max-width: 100%;
   height: auto;
@@ -147,7 +147,7 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
 .grid-2-bilde-bildegalleri{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background-image: url("/media/rosatre2.jpg"); /* Foto: Signe Solberg Jørgensen */
+  background-image: url(../media/rosatre2.jpg); /* Foto: Signe Solberg Jørgensen */
   background-size:cover;
   max-width: 100%;
   height: auto;
