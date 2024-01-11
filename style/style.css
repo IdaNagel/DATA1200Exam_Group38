@@ -140,17 +140,18 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 }
 
 
-/* klasse for bilder som skal være delvis gjennomsiktige, til dekorasjon */
-.bilde-pynt {
-  max-height: 400px;
-  width: auto;
-  opacity: 0.5;
-  object-fit: fill;
-  height: 100%;
-  margin: 0;
-  padding: 0%; 
-}
 
+
+.bildegalleri {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  display: block;
+  
+  
+
+
+}
 
 /* Har lagt inn alt av media-query sammen på bunnen av css hva gjelder skalering for å gjøre det mer oversiktlig og fint */
 @media only screen and (min-width: 750px) {
@@ -228,8 +229,7 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
 
     .grid-3-index{
       background-color: #db982c;
-      background-image: url(../media/logo.png); /* Foto: OsloMet.no */
-      opacity: 0.6;
+      background-image: url(../media/inngang.jpg); /* Foto: OsloMet.no */
       background-size: cover;
       grid-area: grid-3;
       grid-column: 1 / 2;
@@ -401,6 +401,7 @@ etter hverandre*/
   grid-template-areas:
     'header header'
     'menu menu'
+    'textbox textbox'
     'main main2'
     'footer footer';
     height: 100%;
@@ -474,7 +475,7 @@ etter hverandre*/
   font-size: 2.5rem;
   padding-right: 50px;
   color: #000000;
-  background-color:#4ecec7;
+  background-color:#ad2069;
   text-transform: uppercase;
   padding: 20px;
   text-decoration: none;
@@ -486,23 +487,33 @@ etter hverandre*/
 
 }
 
+/* Side 4: Tekstboks */
+.side4-grid-textbox{
+  grid-area: textbox;
+  background-color: none;
+  text-align: center;
+  padding-top: 10px; 
+  padding-bottom: 0px;
+
+  border: 0px solid #636363; 
+
+}
 
 /*Side 4: Styling av hovedinnhold*/
 .side4-grid-innholdvenstre { 
   grid-area: main;
-  background-color: none;
+  background-color: #f0b372;
   border: 0px solid #636363; 
-  padding: 50px;
-  font-size: 1.5rem;
+  padding: 0px;
 }
 
 
 /*Side4: Styling av hovedinnhold høyre side*/
 .side4-grid-innholdhøyre {
   grid-area: main2;
-  background-color: none;
+  background-color: #f0b372;
   border: 0px solid #636363; 
-  padding: 50px;
+  padding: 0px;
   font-size: 1.5rem;
 
 }
