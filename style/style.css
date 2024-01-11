@@ -367,33 +367,18 @@ etter hverandre*/
 
 
 
+/* ------------------- Unik styling av "Bildegalleri" ---------------- */
 
 
 
-
-
-
-
-
-/* SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 SIDE 4 */
-
-
-
-
-
-
-
-
-
-
-/*CSS FOR SIDE 4 */
-/* Styling av grids-container, side 4. Hjelp til grids hentet fra w3schools.com */
-.side4-container {
+/* Styling av grids-container, bildegalleri. Hjelp til grids hentet fra w3schools.com */
+.bildegalleri-container {
   display: grid;
   grid-template-areas:
     'header header'
     'menu menu'
-    'textbox textbox'
+    'textbox1 textbox1'
+    'textbox2 textbox3'
     'main main2'
     'footer footer';
     height: 100%;
@@ -403,41 +388,40 @@ etter hverandre*/
 
 
 
-/* Side4: Styling av header med logo */
-.side4-grid-header { 
+/* Bildegalleri: Styling av header med logo */
+.bildegalleri-grid-header { 
   grid-area: header;
   border: 0px solid #636363; 
   background-color: none;
   padding: 20px;
   font-size: 30px;
-
-
-  
   
 }
 
 /* Side 4: Styling av bilde inne i grid1. Kode hentet fra https://www.w3schools.com/howto/howto_css_image_center.asp */
-.side4-grid-header img{
+.bildegalleri-grid-header img{
   height: 150px;
   width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
+  padding-bottom: 50px;
 }
 
 /* Styling av logo når pilpekeren trykker på bildet, hentet fra https://www.w3schools.com/css/css_image_transparency.asp */
-.side4-grid-header img:hover{
+.bildegalleri-grid-header img:hover{
   opacity: 0.5;
 }
 
 
 /*Side 4: Styling av menybar*/
-.side4-grid-menybar { 
+.bildegalleri-grid-meny { 
   grid-area: menu; 
+  height: 80px;
   background-color: none;
   text-align: center;
-  padding-top: 10px; 
+  padding-top: 0px; 
   padding-bottom: 0px;
   border: 0px solid #636363; 
   
@@ -445,24 +429,23 @@ etter hverandre*/
 }
 
 
-/* Side4:Styling av lenker i grid2 (menybar) */
-.side4-grid-menybar a {
+/* bildegalleri:Styling av lenker i grid2 (menybar) */
+.bildegalleri-grid-meny a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   color: #000000;
   background-color: #ffd399;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 5px;
+  padding: 5px;
+  
+ 
 
 }
 
 
-.side4-grid-menybar a:hover {
+.bildegalleri-grid-meny a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   padding-right: 50px;
@@ -471,37 +454,89 @@ etter hverandre*/
   text-transform: uppercase;
   padding: 20px;
   text-decoration: none;
-  margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 5px;
+  padding: 5px;
 
 }
 
-/* Side 4: Tekstboks */
-.side4-grid-textbox{
-  grid-area: textbox;
+
+
+/* bildegalleri: Tekstboks */
+.bildegalleri-grid-textbox1{
+  grid-area: textbox1;
+  background-color: #f0b372;
   background-color: none;
   text-align: center;
   padding-top: 10px; 
   padding-bottom: 0px;
-
   border: 0px solid #636363; 
 
 }
 
-/*Side 4: Styling av hovedinnhold*/
-.side4-grid-innholdvenstre { 
+/* bildegalleri: Tekstboks2 */
+.bildegalleri-grid-textbox2{
+  grid-area: textbox2;
+  background-color: #f0b372;
+  background-color: none;
+  padding: 40px;
+  border: 0px solid #636363; 
+
+}
+
+/* Styling av h2 for bildegalleri */
+.bildegalleri-grid-textbox2 h2{
+  font-family: arial;
+  font-size: 1.5rem;
+  color: #ad2069;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+
+}
+
+
+
+/* bildegalleri: Tekstboks2 */
+.bildegalleri-grid-textbox3{
+  grid-area: textbox3;
+  background-color: #f0b372;
+  background-color: none;
+  padding:40px;
+  border: 0px solid #636363; 
+
+}
+
+/* Styling av h2 for bildegalleri */
+.bildegalleri-grid-textbox3 h2 {
+  font-family: arial;
+  font-size: 1.5rem;
+  color: #ad2069;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+
+}
+
+/* bildegalleri: Styling av hovedinnhold*/
+.bildegalleri-grid-innholdvenstre { 
   grid-area: main;
   background-color: #f0b372;
   border: 0px solid #636363; 
   padding: 0px;
+
 }
 
 
-/*Side4: Styling av hovedinnhold høyre side*/
-.side4-grid-innholdhøyre {
+
+
+
+
+
+
+/*bildegalleri: Styling av hovedinnhold høyre side*/
+.bildegalleri-grid-innholdhøyre {
   grid-area: main2;
   background-color: #f0b372;
   border: 0px solid #636363; 
@@ -509,11 +544,19 @@ etter hverandre*/
   font-size: 1.5rem;
 
 }
+.bildegalleri-grid-innholdhøyre p{
+  font-size: 1.2rem;
+  font-family: arial;
+  color: #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 
 
-/*Side4: Styling av footer-grid*/
-.side4-grid-footer { 
+
+/*bildegalleri: Styling av footer-grid*/
+.bildegalleri-grid-footer { 
   grid-area: footer;
   background-color: #f5e2c4;
   text-align: center;
@@ -524,8 +567,8 @@ etter hverandre*/
   
 }
 
-/* Side 4: Styling av tekst i footer */
-.side4-grid-footer p{
+/* bildegalleri: Styling av tekst i footer */
+.bildegalleri-grid-footer p{
   font-size: 1rem;
   color: #342f1e;
   text-transform: uppercase;
