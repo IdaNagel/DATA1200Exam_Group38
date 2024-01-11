@@ -122,14 +122,6 @@ a:hover {
   padding: 30px;
 }
 
-/*Styling av bilde. Object-fit for at bildet skal dekke hele grid-item, */
-/* Funnet hjelp til kode på https://www.w3schools.com/css/css_rwd_images.asp 
-og https://www.w3schools.com/css/css3_object-fit.asp*/
-.bilde {
-  object-fit: cover;
-  max-height: 700px;
-  width: auto;
-}
 
 /* max-bredde og høyde tilpasset slik at bildet skal endre str ved skalering av nettleser. Hentet fra 
 https://www.w3schools.com/css/css_rwd_images.asp */
