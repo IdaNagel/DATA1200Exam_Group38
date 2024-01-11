@@ -1,22 +1,17 @@
 html,
 body {
   height: 100%;
-  margin: 0;
-  padding: 0%; /* Sjekk om denne funker! */ 
+  margin: 0%;
+  padding: 0%; 
+
 }
 
 p {
-  /* margin over og under er lagt til her og i h1+h2 fordi disse elementene ikke automatisk får linjeskift. 
-  Finner ikke ut hvorfor dette ikke skjer*/
   font-size: 1.2rem;
   font-family: arial;
-  color: #0b3437;
-  word-wrap: break-word;
-  white-space: normal;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
+  color: #000000;
 }
+
 
 h1 {
   font-family: arial;
@@ -44,7 +39,7 @@ h2 {
 }
 
 .forsidetekst-liten {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-family: arial;
   color: #0b3437;
   text-transform: uppercase;
@@ -52,7 +47,7 @@ h2 {
 
 .forsidetekst-stor {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: #f3e6ce;
   text-transform: uppercase;
   font-weight: bold;
@@ -122,8 +117,9 @@ a:hover {
 
 /* Styling av bilde av logoen øverst på siden */
 .logo {
-  width: 140px;
+  width: 240px;
   height: auto;
+  padding: 30px;
 }
 
 /*Styling av bilde. Object-fit for at bildet skal dekke hele grid-item, */
@@ -143,18 +139,28 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
 }
 
+.bilde-i-grid SLETTE????????? {
+  object-fit:contain;
+  width:fit-content;
+  height: fit-content;
+
+  
+
+}
+
 /* klasse for bilder som skal være delvis gjennomsiktige, til dekorasjon */
 .bilde-pynt {
   max-height: 400px;
   width: auto;
   opacity: 0.5;
   object-fit: fill;
+  height: 100%;
+  margin: 0;
+  padding: 0%; 
 }
 
 
 /* Har lagt inn alt av media-query sammen på bunnen av css hva gjelder skalering for å gjøre det mer oversiktlig og fint */
-
-
 @media only screen and (min-width: 750px) {
 
   /* bruker body for å kapsulere alt inn under @media, slik som vist på w3school. Forsøkt uten body, men da skalerer ikke 
@@ -179,15 +185,13 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
       grid-area: navbar;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      padding: 30px;
-
     }
 
     .menybar {
       background-color: #edddd4;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
-      padding: 10px;
+      padding: 50px;
     }
 
     .grid-1 {
@@ -201,28 +205,29 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
     .grid-2 {
       background-color: #cba65c;
       grid-area: grid-2;
-      padding: 40px;
+      padding: 0px;
       grid-column: 2 / 3;
       grid-row: 2 / 3;
+      margin: 0;
+      
     }
 
     /* grid-item på forsiden som fylles helt av et bilde */
-    .grid-2-bilde-forside {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      background-image: url(../media/26.jpg);
-      /* Foto: Signe Solberg Jørgensen */
-      background-size: cover;
-      max-width: 100%;
-      height: auto;
+    .grid-2 img {
+      width:auto;
+      max-width:100%;
+      object-fit:cover;
+      
+
+
     }
 
     /* grid-item i "bildegalleriet" som fylles helt av et bilde */
     .grid-2-bilde-bildegalleri {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
-      background-image: url(../media/rosatre2.jpg);
-      /* Foto: Signe Solberg Jørgensen */
+      background-image: url(../media/rosavegg.jpg); /* Foto: Ragni Farstad Eliassen */
+      
       background-size: cover;
       max-width: 100%;
       height: auto;
@@ -307,7 +312,7 @@ etter hverandre*/
   .grid-2-bilde-forside {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-image: url(../media/26.jpg);
+    background-image: url(../media/bibliotek9.jpg);
     /* Foto: Signe Solberg Jørgensen */
     background-size: cover;
     max-width: 100%;
@@ -382,9 +387,10 @@ etter hverandre*/
 .side4-container {
   display: grid;
   grid-template-areas:
-    'header menu menu menu menu menu menu menu menu'
-    'main main main main main2 main2 main2 main2 main2'
-    'footer footer footer footer footer footer footer footer footer';
+    'header header'
+    'menu menu'
+    'main main2'
+    'footer footer';
     height: 100%;
     width: 100%;
     background-color: #f0b372;
@@ -421,19 +427,16 @@ etter hverandre*/
 }
 
 
-
-
-
-
 /*Side 4: Styling av menybar*/
 .side4-grid-menybar { 
   grid-area: menu; 
   background-color: none;
-  text-align: right;
-  padding: 40px; 
+  text-align: center;
+  padding-top: 10px; 
+  padding-bottom: 0px;
   border: 0px solid #636363; 
-  margin-top: 40px;
-  margin-right: 40px;
+  
+ 
 }
 
 
@@ -459,7 +462,7 @@ etter hverandre*/
   font-size: 2.5rem;
   padding-right: 50px;
   color: #000000;
-  background-color:#efded8;
+  background-color:#f9c684;
   text-transform: uppercase;
   padding: 20px;
   text-decoration: none;
@@ -476,11 +479,8 @@ etter hverandre*/
 .side4-grid-innholdvenstre { 
   grid-area: main;
   background-color: none;
-  padding: 30px;
-  padding-right: 70px;
-  padding-left: 70px;
-  font-size: 30px;
   border: 0px solid #636363; 
+  padding: 50px;
   font-size: 1.5rem;
 }
 
@@ -489,11 +489,8 @@ etter hverandre*/
 .side4-grid-innholdhøyre {
   grid-area: main2;
   background-color: none;
-  padding: 30px;
-  padding-right: 70px;
-  padding-left: 50px;
-  font-size: 30px;
   border: 0px solid #636363; 
+  padding: 50px;
   font-size: 1.5rem;
 
 }
@@ -503,11 +500,12 @@ etter hverandre*/
 /*Side4: Styling av footer-grid*/
 .side4-grid-footer { 
   grid-area: footer;
-  background-color: none;
+  background-color: #f5e2c4;
   text-align: center;
   padding: 20px;
-  font-size: 30px;
   border: 0px solid #636363; 
+  background-color: none;
+  height: 100%;
   
 }
 
