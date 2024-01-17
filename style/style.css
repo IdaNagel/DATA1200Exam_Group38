@@ -30,6 +30,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Styling for beskrivende tekst under bilder */
 .bildetekst {
   font-size: 1rem;
   color: #000000;
@@ -38,6 +39,7 @@ h2 {
   margin-bottom: 30px;
 }
 
+/* Styling for middels stor introduserende tekst på forsiden */
 .forsidetekst-liten {
   font-size: 2.2rem;
   font-family: arial;
@@ -45,6 +47,7 @@ h2 {
   text-transform: uppercase;
 }
 
+/* Styling av stor, introduserende tekst på forsiden */
 .forsidetekst-stor {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3.2rem;
@@ -54,17 +57,19 @@ h2 {
   margin-top: 20px;
 }
 
+/* Styling av lenker i meny */
 .menylink {
   font-size: 2rem;
-  padding-left: 50%;
+
   font-family: arial;
   text-transform: uppercase;
+  text-decoration: none;
 
 }
 
 a {
-  color: #5e4112;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -115,6 +120,11 @@ a:hover {
   font-size: 1.5rem;
 }
 
+/* Bruker ul (liste, i koden for å få linjeskift mellom menylenkene. */
+ul{
+list-style: none;
+}
+
 /* Styling av bilde av logoen øverst på siden */
 .logo {
   width: 240px;
@@ -145,7 +155,43 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
 }
 
+
+
+/* Bildegalleri (Unikt design): Styling av h2 inne i grid tekstboks2 */
+.bildegalleri-grid-textbox2 h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #ad2069;
+  text-transform: uppercase;
+  padding-top: 0px;
+}
+
+
+/* Bildegalleri (Unikt design): Styling av paragrafer i footer */
+.bildegalleri-grid-footer p{
+  font-size: 1rem;
+  color: #342f1e;
+  text-transform: uppercase;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Har lagt inn alt av media-query sammen på bunnen av css hva gjelder skalering for å gjøre det mer oversiktlig og fint */
+
+
+
+
+
+
 @media only screen and (min-width: 750px) {
 
   /* bruker body for å kapsulere alt inn under @media, slik som vist på w3school. Forsøkt uten body, men da skalerer ikke 
@@ -153,9 +199,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
   body {
 
-    /* Kode til plassering av grid-items (grid-template-areas) fra "ProgBytes"-youtube-canal
-(lenke: https://www.youtube.com/watch?v=pw3tyBS6KMw)
-Resten av kode for grid-container og items via W3, https://www.w3schools.com/css/css_grid.asp*/
+    /* Kode for grid-container og items via W3, https://www.w3schools.com/css/css_grid.asp*/
     .container {
       display: grid;
       width: 100%;
@@ -177,6 +221,9 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       padding: 50px;
+      border: 0px solid #636363; 
+      
+    
     }
 
     .grid-1 {
@@ -260,9 +307,178 @@ Resten av kode for grid-container og items via W3, https://www.w3schools.com/css
       padding: 30px;
 
     }
+
+    /* Egen styling for unikt design, lenke "Bildegalleri" STOR SKJERM ------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Bildegalleri (Unikt design): Styling av grids-container. Prøver oss på template-areas for å øve på en annen måte å lage grids på også.
+ Kode til plassering av grid-items (grid-template-areas) fra "ProgBytes"-youtube-canal
+(lenke: https://www.youtube.com/watch?v=pw3tyBS6KMw) */
+.bildegalleri-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu menu'
+    'textbox1 textbox1'
+    'textbox2 textbox3'
+    'main main2'
+    'footer footer';
+    height: 100%;
+    width: 100%;
+    background-color: #f0b372;
+}
+
+
+/* Bildegalleri (Unikt design): Styling av grid, header med logo */
+.bildegalleri-grid-header { 
+  grid-area: header;
+  border: 0px solid #636363; 
+  background-color: none;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Bildegalleri (Unikt design): Styling av bilde inne i grid header. Kode hentet fra https://www.w3schools.com/howto/howto_css_image_center.asp */
+.bildegalleri-grid-header img{
+  height: 150px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  padding-bottom: 50px;
+}
+
+/* /* Bildegalleri (Unikt design): Styling av logo når pilpekeren trykker på bildet, hentet fra https://www.w3schools.com/css/css_image_transparency.asp */
+.bildegalleri-grid-header img:hover{
+  opacity: 0.5;
+}
+
+/* Bildegalleri (Unikt design): Styling av grid,meny */
+.bildegalleri-grid-meny { 
+  grid-area: menu; 
+  height: 80px;
+  background-color: none;
+  text-align: center;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+  border: 0px solid #636363; 
+}
+
+/* Bildegalleri (Unikt design): Styling av lenker i grid, meny */
+.bildegalleri-grid-meny a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: #000000;
+  background-color: #ffd399;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Bildegalleri (Unikt design): Hover-effekt på lenker i grid,meny */
+.bildegalleri-grid-meny a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  padding-right: 50px;
+  color: #000000;
+  background-color:#ad2069;
+  text-transform: uppercase;
+  padding: 20px;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+/* Bildegalleri (Unikt design): Grid, tekstboks1 */
+.bildegalleri-grid-textbox1{
+  grid-area: textbox1;
+  background-color: #f0b372;
+  background-color: none;
+  text-align: center;
+  padding-top: 10px; 
+  padding-bottom: 0px;
+  border: 0px solid #636363; 
+
+}
+
+/* Bildegalleri (Unikt design): Grid, tekstboks2 */
+.bildegalleri-grid-textbox2{
+  grid-area: textbox2;
+  background-color: #f0b372;
+  background-color: none;
+  padding: 40px;
+  border: 0px solid #636363; 
+
+}
+
+
+
+
+
+/* Bildegalleri (Unikt design): Tekstboks3 */
+.bildegalleri-grid-textbox3{
+  grid-area: textbox3;
+  background-color: #f0b372;
+  background-color: none;
+  padding:40px;
+  border: 0px solid #636363; 
+
+}
+
+
+
+
+/* Bildegalleri (Unikt design): Styling av grid, bilder til venstre*/
+.bildegalleri-grid-bildervenstre { 
+  grid-area: main;
+  background-color: #f0b372;
+  border: 0px solid #636363; 
+  padding: 0px;
+
+}
+
+
+
+
+/* Bildegalleri (Unikt design): Styling av grid, bilder høyre side*/
+.bildegalleri-grid-bilderhøyre {
+  grid-area: main2;
+  background-color: #f0b372;
+  border: 0px solid #636363; 
+  padding: 0px;
+  font-size: 1.5rem;
+
+}
+
+
+
+
+
+/* Bildegalleri (Unikt design): Styling av footer-grid*/
+.bildegalleri-grid-footer { 
+  grid-area: footer;
+  background-color: #f5e2c4;
+  text-align: center;
+  padding: 20px;
+  border: 0px solid #636363; 
+  background-color: none;
+  height: 100%;
+  
+}
+
+
+
+
   }
 
 }
+
+
+
+
 
 /* egen media-query når skjermen blir liten, fortsetter med grid-system for å beholde farger og font, men legger "boksene" 
 etter hverandre*/
@@ -278,7 +494,7 @@ etter hverandre*/
     }
 
     /*grid-item øverst på siden m/logo og lenker */
-    .logobar {
+    .grid-logo {
       background-color: #edddd4;
       grid-area: navbar;
       grid-column: 1 / 2;
@@ -286,7 +502,7 @@ etter hverandre*/
       padding: 30px;
     }
 
-    .menybar {
+    .grid-meny {
       background-color: #edddd4;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
@@ -301,7 +517,7 @@ etter hverandre*/
       grid-row: 3 / 4;
     }
 
-  }
+  
 
   .grid-2 {
     background-color: #cba65c;
@@ -357,44 +573,41 @@ etter hverandre*/
     padding: 30px;
 
   }
-}
+
+  /* Unik styling for lenke "Bildegalleri" */
 
 
-
-
-
-
-
-
-
-/* Bildegalleri (Unikt design): Styling av grids-container. Hjelp til grids hentet fra w3schools.com */
+/* Bildegalleri (Unikt design): Styling av grids-container. Prøver oss på template-areas for å øve på en annen måte å lage grids på også.
+ Kode til plassering av grid-items (grid-template-areas) fra "ProgBytes"-youtube-canal
+(lenke: https://www.youtube.com/watch?v=pw3tyBS6KMw) */
 .bildegalleri-container {
   display: grid;
   grid-template-areas:
-    'header header'
-    'menu menu'
-    'textbox1 textbox1'
-    'textbox2 textbox3'
-    'main main2'
-    'footer footer';
+    'header'
+    'menu'
+    'textbox1'
+    'textbox2'
+    'textbox3'
+    'main'
+    'main2'
+    'footer';
     height: 100%;
     width: 100%;
     background-color: #f0b372;
 }
 
 
-
-/* Bildegalleri (Unikt design): Styling av grid, header med logo */
+  /* Bildegalleri (Unikt design): Styling av grid, header med logo */
 .bildegalleri-grid-header { 
   grid-area: header;
   border: 0px solid #636363; 
   background-color: none;
-  padding: 20px;
-  font-size: 30px;
+  margin: 10px;
+
   
 }
 
-/* Bildegalleri (Unikt design): Styling av bilde inne i grid header. Kode hentet fra https://www.w3schools.com/howto/howto_css_image_center.asp */
+  /* Bildegalleri (Unikt design): Styling av bilde inne i grid header. Kode hentet fra https://www.w3schools.com/howto/howto_css_image_center.asp */
 .bildegalleri-grid-header img{
   height: 150px;
   width: auto;
@@ -403,6 +616,7 @@ etter hverandre*/
   margin-right: auto;
   padding: 30px;
   padding-bottom: 50px;
+  
 }
 
 /* /* Bildegalleri (Unikt design): Styling av logo når pilpekeren trykker på bildet, hentet fra https://www.w3schools.com/css/css_image_transparency.asp */
@@ -410,18 +624,16 @@ etter hverandre*/
   opacity: 0.5;
 }
 
-
 /* Bildegalleri (Unikt design): Styling av grid,meny */
 .bildegalleri-grid-meny { 
   grid-area: menu; 
-  height: 80px;
+  height: auto;
+  max-width: auto;
   background-color: none;
+  border: 0px solid #9f1717; 
   text-align: center;
-  padding-top: 0px; 
-  padding-bottom: 0px;
-  border: 0px solid #636363; 
   
- 
+  
 }
 
 
@@ -433,25 +645,20 @@ etter hverandre*/
   background-color: #ffd399;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 5px;
-  padding: 5px;
-  
- 
+  margin-left: 40px;
+  margin-right: 40px;
 
+  
 }
 
 /* Bildegalleri (Unikt design): Hover-effekt på lenker i grid,meny */
 .bildegalleri-grid-meny a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
-  padding-right: 50px;
   color: #000000;
   background-color:#ad2069;
   text-transform: uppercase;
-  padding: 20px;
   text-decoration: none;
-  margin: 5px;
-  padding: 5px;
 
 }
 
@@ -462,7 +669,9 @@ etter hverandre*/
   background-color: #f0b372;
   background-color: none;
   text-align: center;
-  padding-top: 10px; 
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
   padding-bottom: 0px;
   border: 0px solid #636363; 
 
@@ -473,20 +682,12 @@ etter hverandre*/
   grid-area: textbox2;
   background-color: #f0b372;
   background-color: none;
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border: 0px solid #636363; 
 
-}
-
-/* Bildegalleri (Unikt design): Styling av h2 inne i grid tekstboks2 */
-.bildegalleri-grid-textbox2 h2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  color: #ad2069;
-  text-transform: uppercase;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 0px;
 }
 
 
@@ -496,7 +697,10 @@ etter hverandre*/
   grid-area: textbox3;
   background-color: #f0b372;
   background-color: none;
-  padding:40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border: 0px solid #636363; 
 
 }
@@ -542,10 +746,28 @@ etter hverandre*/
   
 }
 
-/* Bildegalleri (Unikt design): Styling av paragrafer i footer */
-.bildegalleri-grid-footer p{
-  font-size: 1rem;
-  color: #342f1e;
-  text-transform: uppercase;
-  
+
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
