@@ -492,7 +492,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 100px 2fr 2fr 2fr 2fr 100px;
+    grid-template-rows: 200px 100px 1fr 1fr 1fr 200px;
     }
 
     /*grid-item øverst på siden m/logo og lenker */
@@ -550,6 +550,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
+    margin:0;
     }
 
     .grid-4 {
@@ -565,6 +566,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 6 / 7;
+      margin:0;
     }
   
 
