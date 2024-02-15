@@ -489,10 +489,11 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 @media only screen and (max-width: 749px) {
   body {
     .container {
+    display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 100px 2fr 2fr 2fr 2fr 100px;
+    grid-template-rows: auto auto auto auto auto auto auto;
     }
 
     /*grid-item øverst på siden m/logo og lenker */
@@ -500,14 +501,16 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     background-color: #edddd4;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 30px;
+    padding: 0px;
+    text-align: center;
     }
 
     .grid-meny {
     background-color: #edddd4;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding: 10px;
+    padding: 0px;
+    text-align: center;
     }
 
     .grid-1 {
@@ -525,15 +528,15 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     }
 
     .grid-2-index {
-    background-color: #a2cb5c;
+    background-image: url(../media/rosavegg.jpg); /* Foto: Ragni Farstad Eliassen */
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-image: url(../media/rosavegg.jpg); /* Foto: Ragni Farstad Eliassen */
-    background-size: cover;
-    padding: 0px;
-    margin: 0;
+    background-size:cover;
+    margin: 0%;
     max-width: 100%;
-    height: auto;
+    min-height: 300px;
+    
+   
     }
 
 
@@ -546,10 +549,15 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     }
 
     .grid-3-index {
-    background-color: #db982c;
-    padding: 40px;
+    background-image: url(../media/inngang.jpg); /* Foto: Ragni Farstad Eliassen */
+    background-size: cover;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
+    background-color: #db982c;
+    padding: 40px;
+    min-height: 300px;
+    
+    margin:0;
     }
 
     .grid-4 {
@@ -561,10 +569,16 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     }
 
     .grid-4-index {
+    background-image: url(../media/logo.png); /* Foto: OsloMet.no */
+    opacity: 0.6;
+    background-size: cover;
+    min-height: 300px;
     background-color: #f0bb66;
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 6 / 7;
+    margin:0;
+  
     }
   
 
@@ -577,8 +591,22 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
 
 
+    .forsidetekst-liten {
+      font-size: 1.5rem;
+      font-family: arial;
+      color: #370b37;
+      text-transform: uppercase;
+    }
 
-
+    .forsidetekst-stor {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2.2rem;
+      color: #f3e6ce;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    
 
 
 
