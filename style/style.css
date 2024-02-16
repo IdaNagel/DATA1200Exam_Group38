@@ -83,7 +83,6 @@ a:hover {
 }
 
 .menybar a:hover {
-  color: #db982c;
   color: #ebaf4f;
   text-decoration: underline;
 }
@@ -104,6 +103,7 @@ a:hover {
 }
 
 .grid-2 a:hover {
+  color: #76d4db;
   text-decoration: underline;
 }
 
