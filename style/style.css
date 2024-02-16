@@ -205,7 +205,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
       padding: 50px;
       border: 0px solid #636363; 
       
-    
+
     }
 
     .grid-1 {
@@ -266,7 +266,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
     .grid-4-index{
       background-image: url(../media/logo.png); /* Foto: OsloMet.no */
-      background-color: #db982c;
+      background-color: #f1c98a;
       opacity: 0.6;
       background-size: cover;
       grid-column: 2 / 3;
@@ -284,16 +284,6 @@ https://www.w3schools.com/css/css_rwd_images.asp */
       padding: 30px;
 
     }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -319,7 +309,8 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
     /* Bildegalleri (Unikt design): Styling av grid, header med logo */
     .bildegalleri-grid-header { 
-  grid-area: header; 
+  grid-area: header;
+  border: 0px solid #636363; 
   background-color: none;
   padding: 20px;
   font-size: 30px;
@@ -348,7 +339,8 @@ https://www.w3schools.com/css/css_rwd_images.asp */
   background-color: none;
   text-align: center;
   padding-top: 0px; 
-  padding-bottom: 0px; 
+  padding-bottom: 0px;
+  border: 0px solid #636363; 
     }
 
     /* Bildegalleri (Unikt design): Styling av lenker i grid, meny */
@@ -361,7 +353,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
   text-decoration: none;
   margin: 5px;
   padding: 5px;
-  }
+    }
 
     /* Bildegalleri (Unikt design): Hover-effekt på lenker i grid,meny */
     .bildegalleri-grid-meny a:hover {
@@ -375,7 +367,8 @@ https://www.w3schools.com/css/css_rwd_images.asp */
   text-decoration: none;
   margin: 5px;
   padding: 5px;
-  }
+
+    }
 
     /* Bildegalleri (Unikt design): Grid, tekstboks1 */
     .bildegalleri-grid-textbox1{
@@ -456,18 +449,6 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* @MEDIA LITEN SKJERM -----------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 749px) {
@@ -498,14 +479,14 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     }
 
     .grid-1 {
-    background-color: #3da6ad;
+    background-color: #65aeb3;
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     }
 
     .grid-2 {
-    background-color: #cba65c;
+    background-color: #f8eaac;
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
@@ -526,7 +507,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
 
     .grid-3 {
-    background-color: #db982c;
+    background-color: #f3b96c;
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
@@ -537,7 +518,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     background-size: cover;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
-    background-color: #db982c;
+    background-color: #f3b96c;
     padding: 40px;
     min-height: 300px;
     
@@ -545,7 +526,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     }
 
     .grid-4 {
-    background-color: #f0bb66;
+    background-color: #f1c98a;
     padding: 40px;
     margin: 0;
     grid-column: 1 / 2;
@@ -557,7 +538,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
     opacity: 0.6;
     background-size: cover;
     min-height: 300px;
-    background-color: #f0bb66;
+    background-color: #f1c98a;
     padding: 40px;
     grid-column: 1 / 2;
     grid-row: 6 / 7;
@@ -591,10 +572,6 @@ https://www.w3schools.com/css/css_rwd_images.asp */
       margin-top: 20px;
     }
     
-
-
-
-
 
 
 
