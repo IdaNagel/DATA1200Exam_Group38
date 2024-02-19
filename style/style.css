@@ -286,7 +286,7 @@ https://www.w3schools.com/css/css_rwd_images.asp */
 
 
 
-    /* Egen styling for unikt design, lenke "Bildegalleri" STOR SKJERM -----------------------------------------------*/
+    /* @media Stor skjerm: Egen styling for unikt design, "Bildegalleri" -----------------------------------------------*/
 
     /* Bildegalleri (Unikt design): Styling av grids-container. Prøver oss på template-areas for å øve på en annen måte å lage grids på også.
     Kode til plassering av grid-items (grid-template-areas) fra "ProgBytes"-youtube-canal
